@@ -1,0 +1,78 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 255, 255);
+    color: rgb(4, 4, 4);
+}
+
+header{
+    background: rgb(0, 0, 0);
+    color: rgb(242, 250, 0);
+    padding: 16px 20px;
+    display: flex;
+    
+}
+header h1{
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+}
+nav{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    margin-left: auto;
+}
+nav a{
+    color: rgb(255, 254, 254);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: 8px;
+    font-size: 0.95rem;
+}
+nav a:hover{
+    background: rgb(red, green, blue);
+    color: rgb(88, 93, 250);
+}
+.contato-section {
+    background-color: #fffefe;
+    padding: 50px 0; /* espaçamento superior e inferior */
+    display: block;
+    
+}
+.contato {
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contato h2 {
+    color: #050505;
+    margin-bottom: 20px;
+}
+
+.contato h3 {
+    margin-top: 20px;
+    color: #000;
+}
+
+.contato p, .contato li {
+    line-height: 1.8;
+    margin: 8px 0;
+}
+.contato ul {
+    list-style-type: none; /* remove marker */
+    padding-left: 5px;    /* mantém o recuo */
+}
+
+
+footer {
+    background: #fff;
+    color: #060606;
+    padding: 18px 20px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.95rem;
+    border-top: 1px solid rgba(217,119,6,0.05);
+}
