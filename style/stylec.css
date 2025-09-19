@@ -1,78 +1,81 @@
-body{
-    font-family: 'Times New Roman', Times, serif;
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
-    background: rgb(255, 255, 255);
-    color: rgb(4, 4, 4);
+    font-family: 'Times New Roman', Times, serif;
+    color: #040404;
+    background: #ffffff;
 }
 
-header{
-    background: rgb(0, 0, 0);
-    color: rgb(242, 250, 0);
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    background: #000;
+    color: #f2fa00;
     padding: 16px 20px;
     display: flex;
-    
+    align-items: center;
+    justify-content: space-between;
 }
-header h1{
-    font-size: 1.4rem;
+
+header h1 {
+    font-size: 2.2rem;
     letter-spacing: 0.5px;
+    margin: 0;
 }
-nav{
+
+nav {
     display: flex;
     gap: 14px;
     align-items: center;
-    margin-left: auto;
 }
-nav a{
-    color: rgb(255, 254, 254);
+nav a {
+    color: #fff;
     text-decoration: none;
     padding: 8px 12px;
     border-radius: 8px;
-    font-weight: 8px;
     font-size: 0.95rem;
-}
-nav a:hover{
-    background: rgb(red, green, blue);
-    color: rgb(88, 93, 250);
-}
-.contato-section {
-    background-color: #fffefe;
-    padding: 50px 0; /* espaçamento superior e inferior */
-    display: block;
-    
-}
-.contato {
-    max-width: 800px;
-    padding: 20px;
-    border-radius: 8px;
+    transition: 0.3s;
 }
 
+nav a:hover {
+    background-color: #585dfa;
+    color: #fff;
+}
+.contato-section {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #f0f0f0; /* cor de fundo suave */
+}
+.contato {
+    max-width: 1000px;
+    width: 100%;
+    background-color: #fff; /* destaque do conteúdo */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
 .contato h2 {
     color: #050505;
+    text-align: center;
     margin-bottom: 20px;
 }
 
 .contato h3 {
+    color: #050505;
     margin-top: 20px;
-    color: #000;
 }
 
 .contato p, .contato li {
-    line-height: 1.8;
     margin: 8px 0;
+    line-height: 1.6;
 }
-.contato ul {
-    list-style-type: none; /* remove marker */
-    padding-left: 5px;    /* mantém o recuo */
-}
-
-
-footer {
-    background: #fff;
-    color: #060606;
-    padding: 18px 20px;
-    margin-top: 30px;
+footer p {
+    margin: 4px 0;
     text-align: center;
-    font-size: 0.95rem;
-    border-top: 1px solid rgba(217,119,6,0.05);
 }
